@@ -2,3 +2,5 @@
 
 Welcome to my HackerRank Practice Repository 🚀
 This repository contains all the HackerRank Python practice questions.
+
+| Day 01 | Added two basic python Questions |  
