@@ -45,3 +45,36 @@ if __name__ == '__main__':
     else:
         print("Not Weird")
     
+""" Question 3:         Task : The provided code stub reads an integer,n from STDIN. For all non-negative integers i < n, print i**2.
+                                
+                                Example:
+
+                                n = 3
+                                The list of non-negative integers that are less than n = 3 is [0,1,2].  Print the square of each number on a separate line. """
+
+# Solution:
+
+if __name__ == '__main__':
+    n = int(input())
+    for i in range(0,n):
+        print(i**2)
+
+""" Question 4:          Task : Given a year, determine whether it is a leap year. If it is a leap year, return the Boolean True, otherwise return False.
+                                Three conditions are used to identify leap years:
+                                
+                                1. The year can be evenly divided by 4, is a leap year, unless:
+                                2. The year can be evenly divided by 100, it is NOT a leap year, unless:
+                                3. The year is also evenly divisible by 400. Then it is a leap year. """
+
+# solution:
+
+def is_leap(year):
+    leap = False
+    if(year % 4 == 0 and year % 100 != 0):
+        return True
+    elif(year % 400 == 0 and year % 100 == 0):
+        return True
+    else:
+        return leap
+year = int(input())
+
