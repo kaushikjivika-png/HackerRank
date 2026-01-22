@@ -159,8 +159,56 @@ if __name__ == '__main__':
 
 average = sum(student_marks[query_name]) / len(student_marks[query_name])
 print(f"{average:.2f}")
+
+
     
+""" Question 9:          Task :  Consider a list (list = []). You can perform the following commands:
+                                 1. insert i e: Insert integer e at position i.
+                                 2. print: Print the list.
+                                 3. remove e: Delete the first occurrence of integer e.
+                                 4. append e: Insert integer e at the end of the list.
+                                 5. sort: Sort the list.
+                                 6. pop: Pop the last element from the list.
+                                 7. reverse: Reverse the list.
+
+                                 Initialize your list and read in the value of n followed by n lines of commands where each command will be of the types listed above. 
+                                 Iterate through each command in order and perform the corresponding operation on your list. 
+                                 
+                                 Example: n=4
+                                           append 1
+                                           append 2
+                                           insert 3 1
+                                           print
+
+                                           Output: [1,3,2] """
+
+
+# solution:
+
+if __name__ == '__main__':
+    N = int(input())
+    lst = []
+    for _ in range(N):
+        command = input().split()
+        if command[0] == "insert" :
+            lst.insert(int(command[1]),int(command[2]))
+        elif command[0] == "append" :
+            lst.append(int(command[1]))
+        elif command[0] == "remove" :
+            lst.remove(int(command[1]))
+        elif command[0] == "pop" :
+            lst.pop()
+        elif command[0] == "sort" :
+            lst.sort()
+        elif command[0] == "reverse" :
+            lst.reverse()
+        elif command[0] == "print" :
+            print(lst)
+    
+
+
    
+
 
 
 
