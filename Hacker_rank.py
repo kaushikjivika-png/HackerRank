@@ -190,21 +190,22 @@ if __name__ == '__main__':
     lst = []
     for _ in range(N):
         command = input().split()
-        if command[0] == "insert" :
-            lst.insert(int(command[1]),int(command[2]))
-        elif command[0] == "append" :
-            lst.append(int(command[1]))
-        elif command[0] == "remove" :
-            lst.remove(int(command[1]))
-        elif command[0] == "pop" :
-            lst.pop()
-        elif command[0] == "sort" :
-            lst.sort()
-        elif command[0] == "reverse" :
-            lst.reverse()
-        elif command[0] == "print" :
+        
+        if(command[0] == "insert"):
+            lst.insert(int(command[1]) , int(command[2]))
+        elif(command[0] == "print"):
             print(lst)
-    
+        elif(command[0] == "remove"):
+            lst.remove(int(command[1]))
+        elif(command[0] == "append"):
+            lst.append(int(command[1]))
+        elif(command[0] == "sort"):
+            lst.sort()
+        elif(command[0] == "pop"):
+            lst.pop()
+        elif(command[0] == "reverse"):
+            lst.reverse()
+        
 
 """ Question 10:         Task :  Given an integer,n and n space-separated integers as input, create a tuple,t of those n integers.
                                  Then compute and print the result of hash(t). 
@@ -221,6 +222,7 @@ if __name__ == '__main__':
     t = tuple(integer_list)
     print(hash(t))
    
+
 
 
 
