@@ -2,3 +2,4 @@
 
 Welcome to my HackerRank Practice Repository 🚀
 This repository contains all the HackerRank Python practice questions.
+Solutions written by me with proper logic.
