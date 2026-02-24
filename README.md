@@ -6,3 +6,9 @@ This repository contains all the HackerRank  practice questions.
 Solutions written by me with proper logic.
 
 📌Questions are grouped in files for better readability and organization.
+
+
+Repository contains:
+
+* Hackerrank_part1
+* Hackerrank_part2
