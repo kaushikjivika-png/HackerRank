@@ -238,10 +238,49 @@ if __name__ == '__main__':
     result = swap_case(s)
     print(result)
 
+""" Question 3:     Task : You are given the firstname and lastname of a person on two different lines. Your task is to read them and print the following:
+                            Hello firstname lastname! You just delved into python.
+                            
+                            Sample Input : Ross
+                                           Taylor
+                                            
+                            Sample Output : Hello Ross Tailor! You just delved into python."""
 
+# Solution:
+
+def print_full_name(first, last):
+    print(f"Hello {first} {last}! You just delved into python.")    
+
+if __name__ == '__main__':
+    first_name = input()
+    last_name = input()
+    print_full_name(first_name, last_name)
+
+
+""" Question 4:     Task :  Read a given string, change the character at a given index and then print the modified string.
+                            
+                            Sample Input : STDIN           Function
+                                            -----           --------
+                                          abracadabra     s = 'abracadabra'
+                                            5 k             position = 5, character = 'k'
+
+                            Sample Output : abrackdabra """
+
+# solution:
+
+def mutate_string(string, position, character):
+    str = string[:5] + 'k' + string[6:]
+    return str
+
+if __name__ == '__main__':
+    s = input()
+    i, c = input().split()
+    s_new = mutate_string(s, int(i), c)
+    print(s_new)
 
 
                               
+
 
 
 
