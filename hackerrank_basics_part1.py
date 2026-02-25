@@ -269,8 +269,8 @@ if __name__ == '__main__':
 # solution:
 
 def mutate_string(string, position, character):
-    str = string[:5] + 'k' + string[6:]
-    return str
+    new_str = string[:position] + character + string[position+1:]
+    return new_str
 
 if __name__ == '__main__':
     s = input()
@@ -280,6 +280,7 @@ if __name__ == '__main__':
 
 
                               
+
 
 
 
