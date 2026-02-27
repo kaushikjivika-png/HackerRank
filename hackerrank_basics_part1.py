@@ -238,7 +238,7 @@ if __name__ == '__main__':
     result = swap_case(s)
     print(result)
 
-""" Question 3:     Task : You are given the firstname and lastname of a person on two different lines. Your task is to read them and print the following:
+""" Question 12:     Task : You are given the firstname and lastname of a person on two different lines. Your task is to read them and print the following:
                             Hello firstname lastname! You just delved into python.
                             
                             Sample Input : Ross
@@ -257,7 +257,7 @@ if __name__ == '__main__':
     print_full_name(first_name, last_name)
 
 
-""" Question 4:     Task :  Read a given string, change the character at a given index and then print the modified string.
+""" Question 13:     Task :  Read a given string, change the character at a given index and then print the modified string.
                             
                             Sample Input : STDIN           Function
                                             -----           --------
@@ -278,8 +278,48 @@ if __name__ == '__main__':
     s_new = mutate_string(s, int(i), c)
     print(s_new)
 
-
+""" Question 14:     Task :   In this challenge, the user enters a string and a substring. You have to print the number of times that
+                              the substring occurs in the given string. String traversal will take place from left to right, not from right to left.
                               
+                              Sample Input : ABCDCDC
+                              Sample Output : CDC """
+
+# solution:
+
+def count_substring(string, sub_string):
+    count = 0
+    for i in range(len(string) - len(sub_string) + 1):
+         if(string[i:i+len(sub_string)]) == sub_string:
+           count += 1
+    return count
+
+if __name__ == '__main__':
+    string = input().strip()
+    sub_string = input().strip()
+    
+    count = count_substring(string, sub_string)
+    print(count)
+                              
+""" Question 15:      Task :   You are given a string .
+                               Your task is to find out if the string  contains: alphanumeric characters, alphabetical characters,
+                               digits, lowercase and uppercase characters.
+                               
+                               Sample Input :  qA2
+                               Sample Output : True
+                                               True
+                                               True
+                                               True
+                                               True """
+
+# solution:
+
+if __name__ == '__main__':
+    s = input()
+    print(any(ch.isalnum()for ch in s))
+    print(any(ch.isalpha()for ch in s))
+    print(any(ch.isdigit()for ch in s))
+    print(any(ch.islower()for ch in s))
+    print(any(ch.isupper()for ch in s))
 
 
 
