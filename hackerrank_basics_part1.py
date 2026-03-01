@@ -321,6 +321,57 @@ if __name__ == '__main__':
     print(any(ch.islower()for ch in s))
     print(any(ch.isupper()for ch in s))
 
+""" Question 16:          Task : you are given a partial code that is used for generating the HackerRank Logo of variable thickness.
+                                 Your task is to replace the blank (______) with rjust, ljust or center.
+                                 
+Sample Input : 5
+
+Sample Output :    
+
+    H                              
+   HHH   
+  HHHHH  
+ HHHHHHH 
+HHHHHHHHH
+  HHHHH               HHHHH             
+  HHHHH               HHHHH             
+  HHHHH               HHHHH             
+  HHHHH               HHHHH             
+  HHHHH               HHHHH             
+  HHHHH               HHHHH             
+  HHHHHHHHHHHHHHHHHHHHHHHHH   
+  HHHHHHHHHHHHHHHHHHHHHHHHH   
+  HHHHHHHHHHHHHHHHHHHHHHHHH   
+  HHHHH               HHHHH             
+  HHHHH               HHHHH             
+  HHHHH               HHHHH             
+  HHHHH               HHHHH             
+  HHHHH               HHHHH             
+  HHHHH               HHHHH             
+                    HHHHHHHHH 
+                     HHHHHHH  
+                      HHHHH   
+                       HHH    
+                        H """
+
+thickness = int(input())  
+c = 'H'
+
+for i in range(thickness):
+    print((c*i).rjust(thickness-1) + c + (c*i).ljust(thickness-1))
+
+for i in range(thickness+1):
+    print((c*thickness).center(thickness*2) + (c*thickness).center(thickness*6))
+
+for i in range((thickness+1)//2):
+    print((c*thickness*5).center(thickness*6))
+
+for i in range(thickness+1):
+    print((c*thickness).center(thickness*2) + (c*thickness).center(thickness*6))
+
+for i in range(thickness):
+    print(((c*(thickness-i-1)).rjust(thickness) + c + (c*(thickness-i-1)).ljust(thickness)).rjust(thickness*6))
+
 
 
 
