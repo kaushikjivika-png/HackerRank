@@ -76,5 +76,42 @@ result = numpy.concatenate((arr1, arr2), axis=0)
 print(result)
 
 
+""" Question 4:           Task : You are given the shape of the array in the form of space-separated integers, each integer representing the size of different dimensions, 
+                                 your task is to print an array of the given shape and integer type using the tools numpy.zeros and numpy.ones.
+                                 
+                           Sample Input : 333
+                           Sample Output : [[[0 0 0]
+                                            [0 0 0]
+                                            [0 0 0]]
+
+                                            [[0 0 0]
+                                             [0 0 0]
+                                             [0 0 0]]
+
+                                            [[0 0 0]
+                                             [0 0 0]
+                                             [0 0 0]]]
+
+                                            [[[1 1 1]
+                                              [1 1 1]
+                                              [1 1 1]]
+
+                                             [[1 1 1]
+                                              [1 1 1]
+                                              [1 1 1]]
+
+                                             [[1 1 1]
+                                              [1 1 1]
+                                              [1 1 1]]]"""
+
+# Solution:
+
+import numpy as np 
+arr = tuple(map(int,input().split()))
+print(np.zeros(arr,dtype=int))
+print(np.ones(arr,dtype=int))
+
+
+
 
 
