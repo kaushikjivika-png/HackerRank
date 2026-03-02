@@ -372,6 +372,30 @@ for i in range(thickness+1):
 for i in range(thickness):
     print(((c*(thickness-i-1)).rjust(thickness) + c + (c*(thickness-i-1)).ljust(thickness)).rjust(thickness*6))
 
+""" Question 15:        Task :   You are given a string s and width w.
+                                 Your task is to wrap the string into a paragraph of width .
+                                 
+                                 Sample Input : ABCDEFGHIJKLIMNOQRSTUVWXYZ
+                                                4
+                                 Sample Output : ABCD
+                                                 EFGH
+                                                 IJKL
+                                                 IMNO
+                                                 QRST
+                                                 UVWX
+                                                 YZ """
+
+# solution:
+
+import textwrap
+
+def wrap(string, max_width):
+    return textwrap.fill(string,max_width)
+
+if __name__ == '__main__':
+    string, max_width = input(), int(input())
+    result = wrap(string, max_width)
+    print(result)
 
 
 
