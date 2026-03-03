@@ -111,6 +111,32 @@ arr = tuple(map(int,input().split()))
 print(np.zeros(arr,dtype=int))
 print(np.ones(arr,dtype=int))
 
+""" Question 5:           Task :    You are given a NXM integer array matrix with space separated elements (N = rows and M = columns).
+                                    Your task is to print the transpose and flatten results.
+
+                                    Sample Input : 2 2
+                                                   1 2
+                                                   3 4
+                                                   
+                                    Sample Output : [[1 3]
+                                                     [2 4]]
+                                                    [1 2 3 4] """
+
+# solution:
+
+import numpy
+N,M = map(int,input().split())
+matrix = []
+for i in range(N):
+    row = list(map(int,input().split()))
+    matrix.append(row)
+    
+arr = numpy.array(matrix)
+print(numpy.transpose(arr))
+print(arr.flatten())
+
+
+
 
 
 
