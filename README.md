@@ -10,5 +10,5 @@ Solutions written by me with proper logic.
 
 Repository contains:
 
-* Hackerrank_part1
-* Hackerrank_part2
+* Hackerrank_part1 (For Python Hackerrank Questions)
+* Hackerrank_part2 (For Numpy Hackerrank Questions)
