@@ -434,6 +434,40 @@ if __name__ == '__main__':
       print(name)
 
 
+""" Question 17:         Task :       Mr. Vincent works in a door mat manufacturing company. One day, he designed a new door mat with the following specifications:
+                                      Mat size must be NXM. (N is an odd natural number, and M is 3 times N.)
+                                      The design should have 'WELCOME' written in the center.
+                                      The design pattern should only use |, . and - characters.
+                                      
+                         Sample Input : 9 27
+                         Sample Output : ------------.|.------------
+                                         ---------.|..|..|.---------
+                                         ------.|..|..|..|..|.------
+                                         ---.|..|..|..|..|..|..|.---
+                                         ----------WELCOME----------
+                                         ---.|..|..|..|..|..|..|.---
+                                         ------.|..|..|..|..|.------
+                                         ---------.|..|..|.---------
+                                         ------------.|.------------ """
+
+# solution: 
+
+N,M = map(int,input().split())
+
+# Top Half
+for i in range(1,N,2):
+    pattern = ".|."*i
+    print(pattern.center(M,"-"))
+
+# Middle line
+print("WELCOME".center(M,"-"))
+
+# Bottom Half
+for i in range(N-2,0,-2):
+    pattern = ".|."*i
+    print(pattern.center(M,"-"))
+    
+
 
 
 
